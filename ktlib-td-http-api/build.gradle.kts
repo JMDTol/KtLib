@@ -6,5 +6,5 @@ dependencies {
         exclude("com.google.code.gson", "gson")
     }
 
-    api("com.google.code.gson:gson:2.8.6")
+    api("com.google.code.gson:gson:2.9.0")
 }
