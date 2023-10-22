@@ -101,8 +101,8 @@ suspend fun <T : BaseRequest<T, R>, R : BaseResponse> httpSync(botToken: String,
 
         }
 
-        val response = GSON.fromJson<R>(body, request.responseType)!!
-
+       // val response = GSON.fromJson<R>(body, request.responseType)!!
+        val response = GSON.fromJson(body, request.responseType)!!
         if (!response.isOk) {
 
             throw TdException(response.errorCode(), response.description())
